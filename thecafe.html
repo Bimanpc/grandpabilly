@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Machine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .coffee-machine {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .coffee-machine button {
+            background-color: #6f4e37;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .coffee-machine button:hover {
+            background-color: #563d2d;
+        }
+    </style>
+</head>
+<body>
+    <div class="coffee-machine">
+        <h1>Coffee Machine</h1>
+        <button onclick="makeCoffee()">Make Coffee</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function makeCoffee() {
+            document.getElementById('message').innerText = 'Your coffee is ready!';
+        }
+    </script>
+</body>
+</html>
